@@ -16,7 +16,7 @@ COLLECTION_NAME = os.getenv("QDRANT_COLLECTION_NAME", "meu_primeiro_rag")
 # ==========================================
 # Vamos usar um modelo multilíngue do sentence_transformers que é leve,
 # rápido e lida super bem com textos em Português!
-EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+EMBEDDING_MODEL_NAME = "intfloat/multilingual-e5-small"
 
 # ==========================================
 # CAMINHOS DE PASTAS DO PROJETO
@@ -31,5 +31,5 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 # CONFIGURAÇÕES DE CHUNKING (Divisão de texto)
 # ==========================================
 # Como os PDFs podem ser longos, precisamos quebrar em pedaços (chunks).
-CHUNK_SIZE = 1000       # Quantidade de caracteres por pedaço
+CHUNK_SIZE = 1000      # Quantidade de caracteres por pedaço
 CHUNK_OVERLAP = 200     # Quantos caracteres se sobrepõem entre um pedaço e o próximo (mantém o contexto)

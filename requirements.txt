@@ -12,6 +12,7 @@ langchain-google-genai
 langchain-openrouter
 sentence-transformers
 langchain-huggingface
+langchain-qdrant
 
 # Ferramentas e Auxiliares
 google-search-results
@@ -23,3 +24,4 @@ pydantic
 gitpython
 bandit
 safety
+pypdf
