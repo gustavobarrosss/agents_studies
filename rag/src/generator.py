@@ -21,7 +21,7 @@ def configurar_llm():
         
         # Escolha o modelo que quiser! Abaixo estou usando o Llama 3 8B gratuito como exemplo.
         # Você pode trocar por "anthropic/claude-3-haiku", "openai/gpt-4o-mini", etc.
-        model="meta-llama/llama-3-8b-instruct:free", 
+        model="openrouter/arcee-ai/trinity-large-preview:free", 
         
         temperature=0.1, # Mantemos baixo para evitar alucinações
         
