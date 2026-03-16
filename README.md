@@ -164,6 +164,7 @@ Um Sistema Multiagentes é um sistema composto por múltiplos agentes que:
 - [x] Arquiteturas clássicas de agentes
 - [x] LangChain para agentes únicos
 - [x] CrewAI para sistemas multiagentes
+- [ ] RAG com Qdrant (em desenvolvimento)
 - [ ] Padrões de projeto (em desenvolvimento)
 - [ ] Agentes com LLMs locais
 - [ ] Integração com Vector Databases

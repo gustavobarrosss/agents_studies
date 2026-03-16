@@ -21,9 +21,9 @@ def configurar_llm():
         
         # Escolha o modelo que quiser! Abaixo estou usando o Llama 3 8B gratuito como exemplo.
         # Você pode trocar por "anthropic/claude-3-haiku", "openai/gpt-4o-mini", etc.
-        model="openrouter/arcee-ai/trinity-large-preview:free", 
+        model="stepfun/step-3.5-flash:free", 
         
-        temperature=0.1, # Mantemos baixo para evitar alucinações
+        temperature=0.3, # Mantemos baixo para evitar alucinações
         
         # A OpenRouter pede esses headers para identificar o seu app no painel deles
         default_headers={
