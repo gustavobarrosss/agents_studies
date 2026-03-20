@@ -25,3 +25,5 @@ gitpython
 bandit
 safety
 pypdf
+
+arxiv
