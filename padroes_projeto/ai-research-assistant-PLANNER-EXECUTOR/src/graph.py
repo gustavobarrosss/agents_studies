@@ -33,7 +33,10 @@ def synthesizer_node(state: ResearchState):
     prompt = ChatPromptTemplate.from_messages([
         ("system", "Você é um redator técnico especialista em Inteligência Artificial. "
                    "Sua tarefa é ler as anotações de pesquisa de um assistente operário e "
-                   "escrever um relatório final coeso, bem formatado em Markdown e direto ao ponto.\n"
+                   "escrever um relatório final coeso, bem formatado em Markdown.\n"
+                   "Observações: Redija esse relatório em Português Brasileiro"
+                   "Esse relatório deve conter TUDO que alguém precisa para entender o tema, independente de seu tamanho e complexidade"
+                   "Gere esse relatório em um nível decrescente de abstração, ou seja, comece com a conceituação e vá aprofundando"
                    "Tema original: {topic}"),
         ("user", "Anotações da pesquisa:\n{history}")
     ])

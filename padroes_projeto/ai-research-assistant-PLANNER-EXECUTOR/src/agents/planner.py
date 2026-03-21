@@ -36,7 +36,8 @@ def planner_node(state: ResearchState):
     prompt = ChatPromptTemplate.from_messages([
         ("system", "Você é um assistente de pesquisa acadêmica sênior especializado em Inteligência Artificial. "
                    "Sua tarefa é receber um tema e criar um plano de pesquisa direto e focado de 3 a 5 passos. "
-                   "O plano deve focar em buscar papers relevantes, extrair resumos e sintetizar descobertas. "
+                   "Os passos devem ser em nível crescente de complexidade e detalhamento. Ou seja, da conceituação até o detalhamento a nível baixo de abstração."
+                   "Garanta que seu plano englobe tudo sobre o tema pesquisado, para até um leigo no assunto conseguir ser um especialista depois de cumprir os passos."
                    "Não adicione passos desnecessários."),
         ("user", "Crie um plano de pesquisa para o seguinte tema: {research_topic}")
     ])

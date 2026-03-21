@@ -2,6 +2,13 @@
 import os
 from dotenv import load_dotenv
 
+# Ignorar warnings do pydantic
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
+
+# Importa a função de exportar documentos
+from src.utils.pdf_export import save_report_to_pdf
+
 # Carrega as variáveis do arquivo .env (como a OPENROUTER_API_KEY)
 load_dotenv()
 
@@ -51,7 +58,13 @@ def main():
     print("\n==================================================")
     print("📄 RELATÓRIO FINAL")
     print("==================================================\n")
-    print(report)
+
+    print("\n💾 Salvando relatório em PDF...")
+    try:
+        filepath = save_report_to_pdf(topic, report)
+        print(f"✅ Sucesso! Arquivo salvo em: {filepath}")
+    except Exception as e:
+        print(f"❌ Erro ao salvar o PDF: {e}")
 
 if __name__ == "__main__":
     main()

@@ -27,3 +27,4 @@ safety
 pypdf
 
 arxiv
+fpdf2
