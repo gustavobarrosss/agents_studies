@@ -31,3 +31,6 @@ arxiv
 fpdf2
 lxml_html_clean
 newspaper3k
+
+beautifulsoup4
+requests
