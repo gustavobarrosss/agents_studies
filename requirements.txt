@@ -4,6 +4,7 @@
 langchain
 crewai
 langchain-community
+agno
 
 # Integrações (Removendo travas rígidas para evitar o conflito de SDK)
 langchain-openai
@@ -28,3 +29,5 @@ pypdf
 
 arxiv
 fpdf2
+lxml_html_clean
+newspaper3k
