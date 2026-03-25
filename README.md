@@ -61,7 +61,7 @@ Implementações práticas utilizando frameworks modernos para construção de a
 |-----------|------|-----------|
 | **LangChain** | Single Agent | Framework para construção de agentes via código Python. Fornece classes para criar pipelines envolvendo LLMs com controle total sobre cada detalhe. |
 | **CrewAI** | Multi-Agent | Framework focado em orquestração e gerenciamento de sistemas multiagentes. Construído sobre o LangChain, permite criar "times" de agentes com papéis definidos. |
-| **LangFlow** | Low-Code | Plataforma visual low-code para criação de agentes. Interface intuitiva para não-programadores criarem protótipos rapidamente. |
+| **LangGraph** | Graph-Based | Framework orientado a grafos para workflows complexos com múltiplos caminhos, loops e ramificações. Cada nó é um agente ou função; as arestas definem o fluxo de execução. |
 
 ### Projetos Implementados
 
@@ -75,6 +75,21 @@ Implementações práticas utilizando frameworks modernos para construção de a
   - Agente Pesquisador (dados técnicos)
   - Agente Analista de Notícias (sentimento de mercado)
   - Agente Consultor (recomendação final)
+
+- **[Auditoria de Segurança LangGraph](frameworks_e_ferramentas/agentes_langgraph/)**: Workflow de auditoria de repositórios GitHub com padrão Fan-Out/Fan-In.
+  - Análise estática de código (SAST)
+  - Verificação de dependências (SCA)
+  - Análise de documentação
+
+---
+
+## RAG (Retrieval-Augmented Generation)
+
+Pasta: [`rag/`](rag)
+
+Pipeline de perguntas e respostas sobre documentos PDF locais. Usa Qdrant como banco vetorial, embeddings multilíngues (E5) e LLM via OpenRouter. Interface construída com Streamlit.
+
+- **[RAG com Qdrant](rag/)**: Ingestão de PDFs e consulta via busca semântica + geração de resposta.
 
 ---
 
@@ -164,10 +179,13 @@ Um Sistema Multiagentes é um sistema composto por múltiplos agentes que:
 - [x] Arquiteturas clássicas de agentes
 - [x] LangChain para agentes únicos
 - [x] CrewAI para sistemas multiagentes
-- [ ] RAG com Qdrant (em desenvolvimento)
-- [ ] Padrões de projeto (em desenvolvimento)
+- [x] LangGraph para workflows orientados a grafos
+- [x] RAG com Qdrant
+- [x] Integração com Vector Databases (Qdrant)
+- [x] Padrão Planner-Executor
+- [x] Padrão ReAct com Agno
+- [ ] Padrão Supervisor-Worker
 - [ ] Agentes com LLMs locais
-- [ ] Integração com Vector Databases
 - [ ] Agentes com memória persistente
 
 ---

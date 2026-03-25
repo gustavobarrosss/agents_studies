@@ -4,7 +4,7 @@
 
 ## 1 - Planejador-Executor (Planner-Executor)
 
-Separacao entre o agente que planeja acoes e o agente que as executa. O Planejador gera um roteiro e o Executor percorre cada passo, podendo usar ferramentas. Ideal para tarefas multi-etapas onde o caminho completo nao e conhecido de antemao.
+Separação entre o agente que planeja ações e o agente que as executa. O Planejador gera um roteiro e o Executor percorre cada passo, podendo usar ferramentas. Ideal para tarefas multi-etapas onde o caminho completo não é conhecido de antemão.
 
 Projeto: [LANGGRAPH-PLANNER-EXECUTOR-PesquisadorDeIA](LANGGRAPH-PLANNER-EXECUTOR-PesquisadorDeIA/)
 
@@ -14,6 +14,6 @@ Projeto: [LANGGRAPH-PLANNER-EXECUTOR-PesquisadorDeIA](LANGGRAPH-PLANNER-EXECUTOR
 
 ## 3 - Agente com Ferramentas/Skills (ReAct)
 
-Agente equipado com ferramentas especificas para realizar acoes no mundo real. O padrao ReAct (Reasoning + Acting) guia o agente a raciocinar sobre qual ferramenta usar antes de agir.
+Agente equipado com ferramentas específicas para realizar ações no mundo real. O padrão ReAct (Reasoning + Acting) guia o agente a raciocinar sobre qual ferramenta usar antes de agir.
 
 Projeto: [AGNO-ReAct-ConsultorDeVendas](AGNO-ReAct-ConsultorDeVendas/)
